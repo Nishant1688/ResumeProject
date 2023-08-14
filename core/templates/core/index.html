@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="mt-5">
+    <div class="text-center">
+        <img src="{% static 'core/images/ProfilePic.jpg' %}" alt="ProfilePic" class="img-thumbnail" width="250px" height="150px">
+    </div>
+    <div class="text-white mt-5 mx-5 text-justify">
+        <h2 class="font-weight-bold st-font"> Hello, </h2>
+        <div class="px-5" style="line-height: 2rem;">
+            <p style="text-indent: 100px;">
+                I am <b class="text-warning"> Nishant Joshi </b> Certified Python Developer experience in Django. Skilled in developing a readable and simple curriculum for the average user to get started with Python; using Python programming and language to develop a working and efficient network within the company. Adept in performing research regarding Python Programming and its uses and efficiency; developing object-oriented programming to enhance company product management.
+            </p>
+            <p>
+                <b class="text-warning"> Expert in Python, with knowledge of Python web framework; </b> able to integrate multiple data sources and databases into one system. Understanding of the threading limitations of Python, and multiprocess architecture; understanding of accessibility and security compliance. Managed, developed and designed a dashboard control panel for customers and administrators using DJANGO, Oracle DB, PostgreSQL and VMWARE API calls.
+              </p>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 ms-5"> Hire Me </a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3 ms-5"> Contact Me </a>
+    </div>
+</div>
+{% endblock content %}
